@@ -14,6 +14,7 @@ export default function Dictionary() {
           placeholder="Search for a word.."
           autoFocus={true}
         />
+        <input type="submit" value="Search" />
       </form>
     </div>
   );
