@@ -1,5 +1,20 @@
-
+import React from "react";
+import "./Dictionary.css";
 
 export default function Dictionary() {
-  return "Hello";
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
+  return (
+    <div className="Dictionary">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="Search for a word.."
+          autoFocus={true}
+        />
+      </form>
+    </div>
+  );
 }

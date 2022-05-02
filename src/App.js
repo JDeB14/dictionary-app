@@ -8,7 +8,10 @@ export default function App() {
         <h1>Dictionary</h1>
         <p>What word do you want to look up?</p>
       </header>
-      <Dictionary />
+      <main>
+        <Dictionary />
+      </main>
+      <footer>Coded by Jae DeBerry</footer>
     </div>
   );
 }
