@@ -2,16 +2,21 @@ import React from "react";
 
 export default function Meanings(props) {
   if (props.meaning) {
-    console.log(props.meaning.meanings);
     return (
       <div className="Meanings">
         <h2>{props.meaning.word}</h2>
-        <h5>{props.meaning.phonetic}</h5>
+        <h6>{props.meaning.phonetic}</h6>
+        <a href="{props.meaning.phonetics[0].audio}">Pronounce</a>
         {props.meaning.meanings.map(function (array, index) {
           return (
             <div key={index}>
-              <h3>{array.partOfSpeech}</h3>
-              <p>{array.definitions[0].definition}</p>
+              <h5>{array.partOfSpeech}</h5>
+              <p>
+                {array.definitions[0].definition}
+                <br />
+                <br />
+                <em>{array.definitions[0].example}</em>
+              </p>
             </div>
           );
         })}
