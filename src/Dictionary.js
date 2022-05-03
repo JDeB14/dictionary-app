@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Meanings from "./Meanings";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
+  const [meaning, setMeaning] = useState(null);
 
   function showResponse(response) {
-    console.log(response.data[0]);
+    setMeaning(response.data[0]);
   }
   function searchWord(event) {
     event.preventDefault();
@@ -31,6 +33,7 @@ export default function Dictionary() {
         />
         <input type="submit" value="Search" />
       </form>
+      <Meanings meaning={meaning} />
     </div>
   );
 }
