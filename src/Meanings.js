@@ -5,8 +5,15 @@ export default function Meanings(props) {
     return (
       <div className="Meanings">
         <h2>{props.meaning.word}</h2>
-        <h6>{props.meaning.phonetic}</h6>
-        <a href="{props.meaning.phonetics[0].audio}">Pronounce</a>
+        <h6>{props.meaning.phonetic}</h6>{" "}
+        <a
+          href={`${props.meaning.phonetics[0].audio}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa-solid fa-volume-high"></i>
+        </a>
+        <br /> <br />
         {props.meaning.meanings.map(function (array, index) {
           return (
             <div key={index}>
