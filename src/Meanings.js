@@ -1,5 +1,6 @@
 import React from "react";
 import Phonetic from "./Phonetic";
+import Synonyms from "./Synonyms";
 
 export default function Meanings(props) {
   if (props.meaning) {
@@ -19,6 +20,7 @@ export default function Meanings(props) {
                 <br />
                 <em>{array.definitions[0].example}</em>
               </p>
+              <Synonyms synonyms={array.synonyms} />
             </div>
           );
         })}
