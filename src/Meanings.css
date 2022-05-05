@@ -1,0 +1,27 @@
+.Meanings h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+.Meanings h6 {
+  font-size: 17px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.Meanings h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3C63A5;
+}
+
+.Meanings .definition {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.Meanings .example {
+  font-size: 17px;
+  color: #70757a;
+  font-style: italic;
+  margin-bottom: 15px;
+}

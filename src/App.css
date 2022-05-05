@@ -3,6 +3,16 @@
   text-align: center;
 }
 
+.App-header h1 {
+  font-size: 45px;
+}
+
+.App-header p {
+  color: #3c63a5;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .App footer {
   margin: 20px auto;
   text-align: center;
