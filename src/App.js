@@ -11,7 +11,16 @@ export default function App() {
       <main>
         <Dictionary />
       </main>
-      <footer>Coded by Jae DeBerry</footer>
+      <footer>
+        Coded by{" "}
+        <a
+          href="https://relaxed-pixie-2dceb4.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Jae DeBerry
+        </a>
+      </footer>
     </div>
   );
 }
