@@ -28,7 +28,7 @@ export default function Dictionary() {
         <form onSubmit={searchWord}>
           <input type="search" autoFocus={true} onChange={updateKeyword} />
         </form>
-        <div className="hint">Suggested words: wine, hug, plant, yoga...</div>
+        <div className="hint">i.e. wine, hug, plant, yoga</div>
       </section>
       <Meanings meaning={meaning} />
     </div>
