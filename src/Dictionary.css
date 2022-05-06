@@ -4,19 +4,21 @@
 
 .Dictionary section {
   margin: 15px auto;
-  padding: 30px;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 80%;
-  min-width: 600px;
+  max-width: 860px;
 }
 .Dictionary .hint {
   margin-top: 4px;
-  font-size: 14px;
+  font-size: 15px;
   color: #575d64;
 }
 
 .Dictionary input {
   width: 100%;
   border: 2px solid #1c6dd0;
+  border-radius: 8px;
+  padding: 22px;
+  height: 64px;
 }
