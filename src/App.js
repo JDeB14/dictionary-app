@@ -12,13 +12,21 @@ export default function App() {
         <Dictionary />
       </main>
       <footer>
-        Coded by{" "}
+        This project was coded by{" "}
         <a
           href="https://relaxed-pixie-2dceb4.netlify.app"
           target="_blank"
           rel="noreferrer"
         >
           Jae DeBerry
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://github.com/JDeB14/dictionary-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on Github
         </a>
       </footer>
     </div>
