@@ -20,7 +20,7 @@ export default function Meanings(props) {
                 <div className="definition">
                   {array.definitions[0].definition}
                 </div>
-                <div className="example">{array.definitions[0].example}</div>
+                <div className="example">{array.definitions[0].example} </div>
               </div>
               <Synonyms synonyms={array.synonyms} />
             </section>
