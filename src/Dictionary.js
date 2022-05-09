@@ -7,13 +7,14 @@ import "./Dictionary.css";
 export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
   const [meaning, setMeaning] = useState(null);
+  const [photos, setPhotos] = useState(null);
 
   function showResponse(response) {
     setMeaning(response.data[0]);
   }
 
   function showPhotos(response) {
-    console.log(response.data);
+    setPhotos(response.data.photos);
   }
   function searchWord(event) {
     event.preventDefault();
@@ -24,7 +25,7 @@ export default function Dictionary() {
 
     let pexelApiKey =
       "563492ad6f91700001000001e59be451fbd64c43b10b8b22597744f6";
-    let pexelApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+    let pexelApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     const header = { Authorization: `Bearer ${pexelApiKey}` };
     axios.get(pexelApiUrl, { headers: header }).then(showPhotos);
   }
@@ -47,7 +48,7 @@ export default function Dictionary() {
         <div className="hint">i.e. wine, hug, plant, yoga</div>
       </section>
       <Meanings meaning={meaning} />
-      <Photos />
+      <Photos photos={photos} />
     </div>
   );
 }
